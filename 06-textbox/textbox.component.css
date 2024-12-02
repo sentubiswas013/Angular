@@ -1,0 +1,44 @@
+/* Add your styles for the TextboxComponent here */
+.cod-textbox-control {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-weight: 400;
+    line-height: 1.5rem;   
+    color: #212529;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .376rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .cod-textbox-control:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+  }
+
+  .cod-textbox-control.active {
+    color: #c93b18;
+    border-color: #c93b18;
+  }
+
+  .cod-textbox-control:hover {
+    border-color: #86b7fe;
+  }
+
+  .cod-textbox-control:hover-visible {
+    border-color: #86b7fe;
+  }
+
+  .cod-textbox-control:disabled {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+  
+  .cod-textbox-control-error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }

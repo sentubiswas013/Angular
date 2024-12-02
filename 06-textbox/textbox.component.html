@@ -1,0 +1,20 @@
+<div>
+  <input
+    type="text"
+    [id]="id"
+    [placeholder]="placeholder"
+    [name]="name"
+    [(ngModel)]="value"
+    class="cod-textbox-control"
+    [ngClass]="{
+      'textbox-control-disabled': isDisabled === true,
+      'active': touched && isRequired && !value
+    }"
+    [disabled]="isDisabled"
+    [required]="isRequired"
+    (blur)="onBlur()"
+  />
+  <div *ngIf="getErrorMessage()" class="cod-textbox-control-error-message">
+    {{ getErrorMessage() }} 
+  </div>
+</div>
